@@ -1,0 +1,390 @@
+
+@import url(variables.css);
+@import url(common.css);
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar */
+.navbar {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #666872;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-black);
+}
+
+.navbar-logo img {
+  width: 303px;
+  height: 100px;
+}
+
+.navbar-logo .car {
+  font-size: 30px;
+  color: var(--primary-dark);
+}
+
+.navbar-logo .dealership {
+  font-size: 20px;
+  color: var(--primary-red);
+}
+
+/* Main Content Container */
+.container {
+  width: 90%;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+
+/* Filters Section */
+.filter {
+  margin-bottom: 20px;
+}
+
+.mark {
+  margin-top: 10px;
+}
+
+.price-range {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.price-range input {
+  width: 100px;
+}
+
+/* cars */
+.car-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.car-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 4px;
+  border-bottom: 1px solid #c4c2c2;
+  height: 90px;
+  width: 100%;
+  gap: 15px;
+}
+
+.car-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.car-item .car-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+}
+
+.car-item h3 {
+  display: flex;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: -20px;
+}
+
+.car-item p {
+  text-align: left;
+  margin-top: 5px;
+
+}
+
+.car-item .add-btn {
+  margin-left: auto; 
+}
+
+.car-item button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.7s;
+  background-color: #666872;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-item button:hover {
+  background-color: black;
+}
+
+
+/* Cart Items */
+.cart-items {
+  min-width: 460px;
+  max-width: 460px;
+  min-height: 170px;
+  max-height: 170px;
+  overflow-y: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 4px;
+  border-bottom: 1px solid #c4c2c2;
+  height: 90px;
+  width: 100%;
+  gap: 15px; 
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.cart-item .car-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px; 
+}
+
+.cart-item h3 {
+  display: flex;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: -8px;
+}
+
+.cart-item p {
+  text-align: left;
+}
+
+.cart-item .remove-btn {
+  margin-left: auto; 
+}
+
+.cart-item button {
+  border: none;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.7s;
+  background-color: #666872;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.cart-item button:hover {
+  background-color: black;
+}
+
+
+.total {
+  display: block;
+  justify-content: space-between; 
+  align-items: center; 
+  font-size: 26px; 
+  font-weight: bold; 
+  border-radius: 5px; 
+}
+
+.button{
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.7s;
+  background-color: #666872;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.button:hover{
+  background-color: black;
+}
+
+
+/* Add Car Section */
+input[type="text"],
+input[type="number"],
+input[type="url"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 1px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+.button-add{
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.7s;
+  background-color: #666872;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.button-add:hover{
+  background-color: black;
+}
+
+
+/* Payment Modal */
+.payment-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.payment-modal-content {
+  position: relative;
+  margin: 7% 35%;
+  padding: 30px;
+  width: 50%;
+  max-width: 400px;
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.payment-modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.pay-button {
+  background-color: #888;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.payment-modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  outline: none;
+}
+
+
+

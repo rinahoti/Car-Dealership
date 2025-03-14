@@ -1,0 +1,31 @@
+.section-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .section-title::before,
+  .section-title::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: #d3d5e0;
+  }
+
+  .section-title::before{
+    left: -180px;
+  }
+
+  .section-title::after {
+    right: -180px;
+  }
+  
+
+
+  

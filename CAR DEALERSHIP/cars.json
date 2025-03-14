@@ -1,0 +1,31 @@
+[
+    {
+      "image": "img/benz.png",
+      "brand": "MERCEDES"
+    },
+    {
+      "image": "img/bmw.png",
+      "brand": "BMW"
+    },
+    {
+      "image": "img/audi.png",
+      "brand": "AUDI"
+    },
+    {
+      "image": "img/ferrari.png",
+      "brand": "FERRARI"
+    },
+    {
+      "image": "img/rangerover.png",
+      "brand": "RANGE ROVER"
+    },
+    {
+      "image": "img/tesla.png",
+      "brand": "TESLA"
+    },
+    {
+      "image": "img/porsche.png",
+      "brand": "PORSCHE"
+    }
+  ]
+  
